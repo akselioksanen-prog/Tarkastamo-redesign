@@ -1,0 +1,105 @@
+h1 {
+  overflow-wrap: anywhere;
+}
+
+/* Compact closing notes replace the large yellow callout bands. */
+.closing-note {
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.closing-note .shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.closing-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .84rem;
+  font-weight: 700;
+}
+
+.closing-note .button {
+  min-height: 42px;
+  gap: 1.2rem;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: white;
+}
+
+.contact-people {
+  padding: clamp(56px, 8vw, 92px) 0;
+}
+
+.contact-people .section-heading h2 {
+  font-size: clamp(2.1rem, 3.8vw, 3.5rem);
+}
+
+.contact-team .person-card {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+}
+
+.contact-team .person-image {
+  min-height: 154px;
+  aspect-ratio: auto;
+}
+
+.contact-team .person-content {
+  min-width: 0;
+  padding: 1rem;
+}
+
+.contact-team .person-content h3 {
+  margin-bottom: .8rem;
+  font-size: 1.15rem;
+}
+
+.contact-team .person-company {
+  margin: -.35rem 0 .7rem;
+}
+
+.contact-team .person-content dl > div {
+  padding: .42rem 0;
+}
+
+@media (max-width: 720px) {
+  .closing-note .shell {
+    display: grid;
+  }
+
+  .closing-note .button {
+    width: 100%;
+  }
+
+  .contact-team .person-card {
+    grid-template-columns: 92px minmax(0, 1fr);
+  }
+
+  .contact-team .person-image {
+    min-height: 142px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .hero h1 {
+    max-width: none;
+    white-space: nowrap;
+    font-size: clamp(2.75rem, 4.2vw, 4.5rem);
+  }
+}
+
+.service-hint {
+  margin: 0 0 .65rem;
+  color: var(--muted);
+  font-size: .74rem;
+  line-height: 1.35;
+}
+
+.service-card:hover .service-hint {
+  color: #c8c9c4;
+}
