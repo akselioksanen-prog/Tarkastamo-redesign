@@ -50,7 +50,7 @@ function home() {
     <section class="section services"><div class="shell"><div class="section-heading"><div>${eyebrow('Palvelut')}<h2>Selkeä osaaminen<br />talouden tueksi.</h2></div></div>
       <div class="service-grid">${services.map(([number, name]) => `<article class="service-card"><span class="service-number">${number}</span><h3>${name}</h3><p class="service-hint">Klikkaamalla aukeaisi lisää tietoa</p><span class="service-arrow" aria-hidden="true">↗</span></article>`).join('')}</div>
     </div></section>
-    <section class="credibility-band"><div class="shell credibility-grid"><div>${eyebrow('Miksi Tarkastamo')}<h2>Kokemusta, johon voi luottaa.</h2></div><ul><li><span>01</span>Usean kymmenen vuoden tarkastuskokemus</li><li><span>02</span>BIG4-tausta</li></ul></div></section>
+    <section class="credibility-band"><div class="shell credibility-grid"><div>${eyebrow('Miksi Tarkastamo')}<h2>Kokemusta, johon voi luottaa.</h2></div><ul><li><span>01</span>Usean kymmenen vuoden tarkastuskokemus</li><li><span>02</span>BIG4-tausta</li><li class="credibility-placeholder"><span>03</span>[Vahvistettava asiakashyöty]</li><li class="credibility-placeholder"><span>04</span>[Vahvistettava toimintatapa]</li><li class="credibility-placeholder"><span>05</span>[Vahvistettava lisävahvuus]</li></ul></div></section>
     <section class="section clients"><div class="shell clients-layout"><div>${eyebrow('Asiakkaat')}<h2>Asiantuntemusta<br />eri yhteisöille.</h2></div><ul>${clients.map((client, index) => `<li><span>0${index + 1}</span>${client}</li>`).join('')}</ul></div></section>
     <section class="closing-note"><div class="shell"><p>Otetaan talouden tärkeät kysymykset käsittelyyn.</p>${cta('/yhteystiedot', 'Yhteystiedot')}</div></section>
   </main>`;

@@ -103,3 +103,9 @@ h1 {
 .service-card:hover .service-hint {
   color: #c8c9c4;
 }
+
+.credibility-placeholder {
+  color: #c7c8c3;
+  font-style: italic;
+  font-weight: 400 !important;
+}
